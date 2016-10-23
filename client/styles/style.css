@@ -1,0 +1,184 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+.header {
+  color: #FFF;
+  font-size: 24px;
+  text-align: center;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+input {
+  font-size: 14px;
+  min-width: 10em;
+}
+
+.lane {
+  display: inline-block;
+
+  margin: 1em;
+
+  background-color: #EFEFEF;
+  border: 1px solid #CCC;
+  border-radius: 0.5em;
+
+  min-width: 10em;
+  vertical-align: top;
+}
+
+.lane-header {
+  overflow: auto;
+
+  padding: 1em;
+
+  color: #EFEFEF;
+  background-color: #333;
+
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.lane-name {
+  font-size: 22px;
+  float: left;
+}
+
+.lane-delete {
+  float: right;
+  margin-left: 0.5em;
+
+  visibility: hidden;
+}
+.lane-header:hover .lane-delete {
+  visibility: visible;
+}
+
+.add-lane {
+  padding: 0.5em;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFF;
+  background-color: #333;
+  border: 1px solid #ccc;
+}
+.add-lane {
+  box-shadow: 0 0 0.3em 0.03em rgba(0, 0, 0, 0.3);
+}
+.add-lane:hover {
+  box-shadow: 0 0 0.5em 0.05em rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+
+.lane-add-note {
+  padding: 0.5em;
+  margin-top: 1.5em;
+  box-shadow: 0 -0.05em rgba(0, 0, 0, 0.3);
+}
+
+.lane-add-note button {
+  padding: 0.5em;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+
+  background-color: #FFF;
+  color: #333;
+
+  border: none;
+  box-shadow: 0 0 0.3em 0.03em rgba(0, 0, 0, 0.3);
+
+  text-align: left;
+}
+.lane-add-note button:hover {
+  background-color: #333;
+  color: #FFF;
+  box-shadow: 0 0 0.5em 0.05em rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+}
+
+
+.lane-delete button {
+  padding: 0;
+
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+.lane-delete button:hover {
+  color: #FF6961;
+}
+
+.notes {
+  margin: 0.5em;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.note {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+
+  background-color: #FDFDFD;
+  box-shadow: 0 0 0.3em 0.03em rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+}
+.note:hover {
+  box-shadow: 0 0 0.5em 0.05em rgba(0, 0, 0, 0.8);
+
+  transition: 0.4s;
+}
+
+.note .options {
+  float: left;
+  margin-right: 0.5em;
+  height: 20px;
+  width: 20px;
+  background: url('paint_bucket.png') no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+
+  visibility: hidden;
+}
+.note:hover .options {
+  visibility: visible;
+}
+
+.note .value {
+  /* force to use inline-block so that it gets minimum height */
+  display: inline-block;
+  width: 9em;
+}
+
+.note .delete {
+  font-size: 14px;
+  padding: 0;
+  margin-left: 0.5em;
+  float: right;
+  background-color: #FDFDFD;
+  border: none;
+  color: #444;
+  cursor: pointer;
+
+  visibility: hidden;
+}
+.note:hover .delete {
+  visibility: visible;
+}
+
